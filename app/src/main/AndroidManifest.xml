@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.xdd">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="O4LjsAujmrFGTcr4DumELdg5Q0btVeUt" />
+
+        <activity android:name="com.example.xdd.Activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.xdd.Activity.LoginActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name="com.example.xdd.Activity.MainActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.example.xdd.Activity.SecondLayoutActivity"
+            android:label="@string/text5"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.example.xdd.Activity.BalanceActivity"
+            android:label="@string/text2"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.example.xdd.Activity.TripMainActivity"
+            android:label="@string/text3"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.example.xdd.Activity.AddActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.example.xdd.Activity.InformationActivity"
+            android:label="我的消息"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.example.xdd.Activity.FriendsActivity"
+            android:label="@string/text17"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.example.xdd.Activity.DetailActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.example.xdd.Activity.Ask_for_help_Activity"
+            android:label="发布求助" />
+        <activity
+            android:name="com.example.xdd.Activity.PersonalActivity"
+            android:label="个人信息"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.example.xdd.Activity.MsgActivity"
+            android:label="我的对话"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.example.xdd.Activity.HelpOthersActivity"
+            android:label="发布服务"
+            android:launchMode="singleTask" />
+        <activity android:name="com.example.xdd.Activity.RegisterActivity"
+            android:label="注册账号"
+            android:launchMode="singleTask"/>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+
+    </application>
+
+</manifest>

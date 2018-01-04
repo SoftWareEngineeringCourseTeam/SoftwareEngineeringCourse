@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav1"
+            android:title="@string/text2"
+            android:icon="@drawable/balance"/>
+        <item
+            android:id="@+id/nav2"
+            android:title="@string/text3"
+            android:icon="@drawable/dingdan"/>
+        <item
+             android:id="@+id/nav3"
+             android:title="@string/text4"
+            android:icon="@drawable/index3"/>
+        <item
+            android:id="@+id/nav4"
+            android:title="@string/text5"
+            android:icon="@drawable/about"/>
+    </group>
+
+</menu>

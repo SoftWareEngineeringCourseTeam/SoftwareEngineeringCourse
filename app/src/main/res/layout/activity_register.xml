@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:inputType="textPersonName"
+        android:id="@+id/register_account"
+        android:drawableLeft="@mipmap/zhanghu"
+        android:hint="请输入您的账号"
+        android:theme="@style/MyEditText"
+        android:layout_marginTop="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+  <EditText
+   android:id="@+id/register_pwd"
+   android:layout_width="400dp"
+   android:layout_height="60dp"
+   android:inputType="textPassword"
+   android:ems="10"
+   android:drawableLeft="@mipmap/mima"
+   android:hint="请输入您的密码"
+      android:theme="@style/MyEditText"
+      android:layout_below="@+id/register_account"
+      android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/again"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:drawableLeft="@mipmap/mima"
+        android:hint="请再次输入您的密码"
+        android:theme="@style/MyEditText"
+        android:layout_below="@+id/register_pwd"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="同意协议并注册"
+        android:id="@+id/btn_register"
+        android:onClick="finish_login"
+        android:background="#545bcb"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册协议"
+        android:textSize="19sp"
+        android:layout_marginTop="26dp"
+        android:autoLink="all"
+        android:textColor="#121212"
+        android:layout_below="@+id/btn_register"
+        android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+</RelativeLayout>

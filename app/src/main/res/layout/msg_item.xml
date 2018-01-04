@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+
+    android:padding="10dp" >
+
+
+    <LinearLayout
+
+        android:id="@+id/left_layout"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="left">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/axin" />
+
+        <TextView
+            android:id="@+id/left_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/bg_tv"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="6dp"
+            android:textSize="20sp"
+            android:text="1111"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:id="@+id/right_layout"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="right">
+
+        <TextView
+            android:id="@+id/right_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/ic_user"
+            android:background="@drawable/bg_tvb"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="6dp"
+            android:textColor="#FFFFFF"
+            android:text="111"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ic_user"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/guobiting" />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

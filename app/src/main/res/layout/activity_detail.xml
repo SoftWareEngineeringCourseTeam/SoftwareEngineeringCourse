@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ImageView
+        android:layout_gravity="top"
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="323dp"
+        android:src="@drawable/detail1"/>
+   <!-- <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView_detail"
+        android:layout_width="match_parent"
+        android:layout_height="323dp"
+        android:clickable="true" />-->
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单详情"
+        android:textSize="18sp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="订单状态：已完成\n完成时间：2017-6-20\n配送起点：光谷广场\n配送终点：职业技术学院西区\n订单任务：去光谷广场回来时帮忙带一盒周黑鸭回来"/>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/garcon"
+        android:layout_gravity="center"
+        android:text="投诉"/>
+
+</LinearLayout>
