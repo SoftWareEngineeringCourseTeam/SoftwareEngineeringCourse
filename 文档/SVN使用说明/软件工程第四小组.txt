@@ -1,0 +1,7 @@
+实验相关SVN服务器地址:  SVN://CS.STU.EDU.CN/FILES
+SVN客户端软件:TortoiseSVN-1.8.8.25755-win32-svn-1.8.10
+汉化语言包LanguagePack_1.8.8.25755-win32-zh_CN
+
+
+
+se17group04   se04885472
